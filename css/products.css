@@ -1,0 +1,225 @@
+.login-form-pr{
+    visibility: hidden;
+    position: absolute;
+    top: 20%; right: 3%;
+    width:17rem;
+    text-align: center;
+    background-color: white;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.login-form-pr.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.6s;
+    margin: 5px 0;
+    box-shadow: 2px 3px rgba(92, 87, 87, 0.7);
+    padding:10px;
+    z-index: 999; 
+    border-radius: 8px;
+    background: white;
+    text-align: center;
+}
+
+.login-form-pr h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: black;
+    margin: 8px 0;
+}
+
+.login-form-pr .box{
+    width: 70%;
+    margin: 8px 0;
+    background:#eee;
+    border-radius: 8px;
+    font-size: 14px;
+    text-transform: none;
+    padding: 5px 10px; line-height: 28px;
+    border-color: black;
+}
+
+.login-form-pr p{
+    font-size: 13px;
+    padding: 5px 0;
+    color:black;
+}
+
+.login-form-pr p a{
+    color:#E9967A;
+    text-decoration: underline;
+}
+
+.login-form-pr p a:hover{
+    font-weight: 500;
+}
+
+.login-btn-frm{
+    margin: 10px 0;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 8px;
+    border-color: black;
+    border-width: 1.5px;
+}
+
+.login-btn-frm:hover{
+    background-color:#E9967A;
+    color: white;
+    transition: 0.6s;
+}
+
+#myBtnpr{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#333333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+  
+#myBtnpr:hover{
+    background-color: #555;
+    transition: 0.6s;
+}
+
+.ul-products{
+    margin: 20px 55px;
+}
+.ul-products li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+}
+
+.main-box-pr{
+    width: 250px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.slide-img-pr{
+    height: 300px;
+    position: relative;
+}
+
+.slide-img-pr img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box-pr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.type-pr{
+    display: flex;
+    flex-direction: column;
+}
+
+.type-pr a{
+    color: black;
+    margin: 5px 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+    font-size: 14px;
+}
+
+.type-pr span{
+    color: rgba(26, 26, 26, 0.5);
+    font-size: 13px;
+}
+
+.price-pr{
+    color: #333333;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.overlay-pr{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 47, 47, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.btn-cls-pr{
+    display: block;
+}
+
+.buy-btn-pr{
+    width: 135px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color:white;
+    color: #252525;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+}
+
+.basket-btn-pr{
+    width: 135px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: #252525;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+}
+
+.buy-btn-pr:hover, .basket-btn-pr:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #E9967A;
+    transition: 0.4s;
+}
+
+.slide-img-pr:hover .overlay-pr{
+    visibility: visible;
+    animation: fade 0.6s;
+}
+
+/*---FOOTER---*/
+footer{
+    padding: 30px 0;
+    background-color: #FAA390;
+    color: #FFFFFF;
+    text-align: center;
+}
